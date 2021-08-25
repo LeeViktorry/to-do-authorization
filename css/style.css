@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.sidebar{
+    width: 20%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    position: fixed;
+    left: -20%;
+    transition: 0.5s;
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+.sidebar i{
+    color: orangered;
+    box-shadow: 5px 5px solid orangered;
+    position: absolute;
+    right: -17%;
+    font-size: 20px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 1);
+    padding: 15px;
+    transition: 1s;
+}
+
+.show.rotateBurger{
+    right: -8%;
+}
+
+.sidebar ul{
+    color: white;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.logo{
+    font-size: 30px;
+}
+.logo li{
+    color: orangered;
+}
+
+.list li{
+    padding-bottom: 8px;
+    font-size: 18px;
+    width: 85%;
+}
+.list li input{
+    background: none;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid orangered;
+
+}
+.list li input::placeholder{
+    color: orangered;
+}
+.list li input:focus::placeholder{
+    color:white;
+}
+.list li input:focus{
+    border-bottom: 1px solid white;
+}
+.list button{
+    width: 86%;
+    background: orangered;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+.banner{
+    background: url('https://wallpaperaccess.com/full/786375.jpg') center / cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signout{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: 0;
+    background: rgba(95, 61, 42, 0.61);
+    color: silver;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+}
+.signout:hover{
+    background: orangered;
+    color: white;
+}
+.card{
+    width: 500px;
+    height: 400px;
+    background: rgba(197, 85, 20, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 25px white;
+    overflow-y: scroll;
+}
+
+.card-header{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.card-body{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 40px;
+}
+
+.card-body p{
+    color: white;
+    font-size: 18px;
+}
+
+.card-person{
+    width: 100%;
+    margin-bottom: 30px;
+    height: 450px;
+}
+
+.center-card{
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.center-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.info ul{
+    list-style: none;
+    color: black;
+}
+
+.info{
+    display: none ;
+}
+
+.info.activeInfo{
+    display: block ;
+}
+.tools i{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px){
+    .sidebar{
+        width: 25%;
+        left: -25%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sidebar{
+        width: 30%;
+        left: -30%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .sidebar{
+        width: 35%;
+        left: -35%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .sidebar{
+        width: 80%;
+        left: -80%;
+    }
+
+    .sidebar i{
+        right: -10%;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .sidebar i{
+        right: -11.2%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .sidebar i{
+        right: -12%;
+    }
+
+    .sidebar{
+        width: 93%;
+        left: -93%;
+    }
+}
+
+@media screen and (max-width: 415px){
+
+    .sidebar i{
+        right: -14.5%;
+    }
+}
+
+@media screen and (max-width: 360px){
+
+    .sidebar i{
+        right: -17%;
+    }
+}
